@@ -1,0 +1,74 @@
+.container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  z-index: 999;
+}
+
+.showChatbot .chatbotPopup {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+}
+
+.chatbotToggler {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: #007bff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.toggleIcon {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.chatbotPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease;
+  width: 350px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: #f4f9fd;
+  border-radius: 12px 12px 0 0;
+}
+
+.headerInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoText {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a3644;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #1a3644;
+}
